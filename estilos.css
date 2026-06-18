@@ -10,17 +10,94 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.contenedor {
+nav ul li{
+	float: left;
+	list-style:none;
+	margin: 10px;
+	line-height: 30px;
+}
+
+.contenedor_1 {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0;
+	padding: 40px 0;
+
+	display: flex;
+
+	/* display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px; */
+}
+ .contenedor_de_blog {
+
+	/* width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px; */
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+
+}
+
+
+.email {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+	/* width: 33.33%;
+	width calc(33.33% - 20px);  */
+
+}
+
+.email .textos {
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	/* display: grid;
+	grid-template-rows: 1fr auto; */
+	
+}
+
+.portada {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+	/* width: 33.33%;
+	width calc(33.33% - 20px); */
+
+}
+
+.contenedor_2 {
 	width: 90%;
 	max-width: 1200px;
 	margin: auto;
 	padding: 40px 0;
 
+	/* usando flex */
 	/* display: flex;
 	gap: 20px; */
 
 	display: grid;
-	grid-template-columns: 1fr 1 fr;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px;
 }
 
 .titulo {
@@ -34,6 +111,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px; */
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
 
 }
 
@@ -55,9 +136,12 @@ body {
 .card .textos {
 	height: 100%;
 
-	/* display: flex;
+	display: flex;
 	flex-direction: column;
-	justify-content: space-between; */
+	justify-content: space-between;
+
+	/* display: grid;
+	grid-template-rows: 1fr auto; */
 	
 }
 
@@ -68,10 +152,14 @@ body {
 	background-size: cover;
 	background-position: center center;
 
-	/* width: 30%;
+	/* width: 30%; */
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; */
+	justify-content: space-between;
+
+	/* display: grid;
+	grid-template-rows: auto auto auto;
+	align-items: center; */
 
 }
 
