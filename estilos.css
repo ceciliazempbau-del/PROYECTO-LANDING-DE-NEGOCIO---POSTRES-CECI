@@ -98,6 +98,67 @@ header {
 
 }
 
+.contenedor_3 {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+	/* usando flex */
+	/* display: flex;
+	gap: 20px; */
+
+	display: grid;
+	grid-auto-rows: auto;
+	gap: 20px;
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.contenedor-novedades {
+
+	/* width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px; */
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+
+}
+
+.card2 {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+	/* width: 33.33%;
+	width calc(33.33% - 20px); */
+
+}
+
+.card2 .textos {
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	/* display: grid;
+	grid-template-rows: 1fr auto; */
+	
+}
+
 .contenedor_2 {
 	width: 90%;
 	max-width: 1200px;
